@@ -19,6 +19,9 @@
 
 #include "ThreadPool.h"
 
+namespace tp
+{
+
 class PseudoTerminator : public Job
 {
 public:
@@ -92,4 +95,5 @@ void ThreadPool::add(JobPtr job)
     _cv.notify_one();
 }
 
+}
 

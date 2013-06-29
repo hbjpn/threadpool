@@ -26,6 +26,9 @@
 #include <thread>
 #include <memory>
 
+namespace tp
+{
+
 /**
  * Job class
  */
@@ -95,6 +98,6 @@ public:
     void join(); 
 };
 
-
+} // namespace tp
 
 #endif
